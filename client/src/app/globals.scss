@@ -203,7 +203,6 @@ nav {
     font-weight: 600;
   }
 }
-
 .login-menu-container {
   padding: 30px;
   background-color: $secondary-color;
@@ -214,11 +213,18 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: $breakpoint) {
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 20px 55px;
+  }
 }
 
 .login-menu {
   color: #0c0c0c;
   font-weight: 600;
+  width: 100%;
 }
 
 .login-menu-input {
@@ -226,6 +232,7 @@ nav {
   flex-direction: column;
   gap: 10px;
   margin-bottom: 15px;
+  width: 100%;
 }
 
 .login-menu-title {
@@ -234,18 +241,33 @@ nav {
   font-size: 1.5em;
   text-align: center;
   transform: translateY(-10px);
+
+  @media screen and (max-width: $breakpoint) {
+    font-size: 1.2em;
+  }
 }
 
 .login-menu-input-item {
   display: flex;
   gap: 25px;
-  flex-direction: initial;
+  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 10px;
+  width: 100%;
+
+  @media screen and (max-width: $breakpoint) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
   input {
     border-radius: 8px;
     border: 1px solid #e0e0e0;
     padding: 5px;
+    
+    @media screen and (max-width: $breakpoint) {
+      width: 100%;
+    }
   }
 }
 
@@ -261,15 +283,26 @@ nav {
   border-radius: 8px;
   margin: 5px auto;
   text-decoration: none;
+
+  @media screen and (max-width: $breakpoint) {
+    width: 100%;
+  }
 }
 
 .login-menu-bussiness {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 10px;
   text-align: end;
-  margin: -90 380px;
+  position: relative;
+  width: 100%;
+
+  @media screen and (max-width: $breakpoint) {
+    margin: 20px 0;
+    text-align: center;
+  }
 
   a {
     text-decoration: none;
@@ -280,8 +313,15 @@ nav {
 }
 
 .login-menu-section {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 350px;
+  width: 100%;
+  padding: 0;
+
+  @media screen and (max-width: $breakpoint) {
+    max-width: 90%;
+    padding: 0 20px;
+  }
 }
