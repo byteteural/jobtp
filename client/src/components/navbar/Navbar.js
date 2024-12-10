@@ -34,7 +34,7 @@ export default function Navbar() {
             <li><Link href="#!">ค้นหางาน</Link></li>
             <li><Link href="#!">เกี่ยวกับเรา</Link></li>
             <li><Link href="#!">โปรไฟล์</Link></li>
-            <li><Link className="login" href="#!">ลงชื่อเข้าใช้</Link></li>
+            <li><Link className="login" href="/login">ลงชื่อเข้าใช้</Link></li>
           </ul>
         </nav>
       </div>

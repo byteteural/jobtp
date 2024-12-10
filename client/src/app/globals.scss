@@ -248,12 +248,12 @@ nav {
   width: 100%;
 }
 
-.login-menu-input-item-email, .login-menu-input-item-password {
+.login-menu-input-item-email, .login-menu-input-item-password, .login-menu-input-item-confirm-password {
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: space-between;
   gap: 20px;
+  align-items: center;
 
   @media screen and (max-width: $breakpoint) {
     flex-direction: column;
@@ -262,27 +262,27 @@ nav {
 
   label {
     text-wrap: nowrap;
-    min-width: 80px;
+    width: 120px;
     font-weight: 600;
     font-size: 0.9em;
     color: #0c0c0c;
+    text-align: left;
     
     @media screen and (max-width: $breakpoint) {
-      min-width: auto;
+      width: 100%;
       text-align: center;
     }
   }
 
   input {
-    flex: 1;
+    width: 250px;
     border-radius: 8px;
     border: 1px solid #e0e0e0;
     padding: 10px;
     font-size: 1em;
-    max-width: 250px;
 
     @media screen and (max-width: $breakpoint) {
-      max-width: 100%;
+      width: 100%;
     }
 
     &:focus {

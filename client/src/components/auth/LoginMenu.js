@@ -17,11 +17,12 @@ export default function LoginMenu() {
                 <input type="password" id="password" placeholder="password" />
               </div>
             </div>
-            <Link href="/login" className="login-menu-button">เข้าสู่ระบบ →</Link>
+            <Link href="#" className="login-menu-button">เข้าสู่ระบบ →</Link>
           </div>
         </div>
         <div className="login-menu-bussiness">
-          <Link href="/register">ลงชื่อเข้าใช้สำหรับผู้ประกอบการ →</Link>
+          <Link href="/bussiness_login">ลงชื่อเข้าใช้สำหรับผู้ประกอบการ →</Link>
+          <Link href="/register">หรือ สมัครสมาชิก →</Link>
         </div>
       </div>
     </section>
